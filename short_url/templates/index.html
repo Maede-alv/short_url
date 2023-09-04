@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block main_content %}
+    <form name="url" method="post" novalidate class="form">
+            {{ form.hidden_tag() }}
+
+            {{ form.url.label(class_="form__label") }}
+            
+            {% for error in form.url.errors %}
+            <span class="form__error">{{ error }}</span>
+            {% endfor %}
+            
+            <div>
+                {{ form.url(class_="form__field") }}
+                {{ form.submit(class_="button button--form")}}
+            </div>
+    </form>
+{% endblock %}
