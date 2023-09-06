@@ -1,2 +1,2 @@
-FLASK_APP=url_shorter
+FLASK_APP=short_url
 FLASK_DEBUG=True
