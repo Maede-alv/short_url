@@ -19,7 +19,12 @@ body {
   flex-direction: column;
   align-items: center;
   font-family: asap, arial;
-  background-color: #f9f9f9;
+  /* background-color: #f9f9f9; */
+  background: linear-gradient(
+    120deg,
+    rgba(0, 0, 255, 0.164),
+    rgba(255, 0, 0, 0.185)
+  );
   height: 100vh;
 }
 
@@ -48,15 +53,15 @@ body {
 
 .nav__item {
   font: 900 49px asap;
-  color: #ff4cc9;
+  color: #2646d6;
   letter-spacing: -1px;
 }
 
 .urlbox {
   width: 50%;
   height: 200px;
-  box-shadow: 0 1px 4px #ccc;
-  border-radius: 2px;
+  box-shadow: 0 5px 30px #0000001c;
+  border-radius: 10px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -88,10 +93,9 @@ body {
 
 .form__field {
   width: 400px;
-  height: 45px;
-  border-radius: 10px;
+  padding: 10px;
+  border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.085);
-  padding: 4px 0 4px 10px;
   transition: 300ms;
 }
 
@@ -100,25 +104,32 @@ body {
 }
 
 .button--form {
-  background-color: #4cc3ff57;
-  padding: 7px;
+  background-color: #2646d6;
+  color: white;
+  padding: 10px;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   cursor: pointer;
+  box-shadow: 0 6px 10px #08185e31;
+}
+
+.button--form:active {
+  box-shadow: none;
+  transform: scale(0.9);
 }
 
 .footer div {
-  font-size: 13px;
-  color: rgba(0, 0, 0, 0.415);
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.74);
 }
 
 .urlsbox {
-    width: 100%;
-    line-height: 1.45rem;
+  width: 100%;
+  line-height: 1.45rem;
 }
 
 .link {
-    text-decoration: none;
-    color: #30bafff1;
-    gap: 30px;
+  text-decoration: none;
+  color: #30bafff1;
+  gap: 30px;
 }
