@@ -19,7 +19,6 @@ body {
   flex-direction: column;
   align-items: center;
   font-family: asap, arial;
-  /* background-color: #f9f9f9; */
   background: linear-gradient(
     120deg,
     rgba(0, 0, 255, 0.164),

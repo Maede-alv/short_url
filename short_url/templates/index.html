@@ -16,3 +16,17 @@
             </div>
     </form>
 {% endblock %}
+
+{% block url_content %}
+    <div class="urlsbox">
+        {% if long_url %}
+            <section class="results results--active">
+                <p class="short_url">Shortened URL: <a class="link" href="{{ short_url }}">{{ base_url }}{{ short_url }}</a></p>
+            
+                <p class="long_url">Long URL: <a class="link" href="{{ 'long_url' }}">{{ long_url }}</a></p>
+            </section>
+        {% else %}
+            <section class="results"><p>results: </p></section>
+        {% endif %}
+    </div>
+{% endblock %}

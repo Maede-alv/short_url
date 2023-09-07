@@ -24,9 +24,8 @@ def index():
         short_url = generate_short_url()
         
         current_app.db.url.insert_one({"original_url": url, "short_url": short_url})
-        return render_template("shortend_url.html", base_url=base_url, short_url=short_url, long_url=url)
+        return render_template("index.html", form=form, base_url=base_url, short_url=short_url, long_url=url)
         
-    
     return render_template("index.html", form=form)
 
 @pages.route("/<string:short_url>")

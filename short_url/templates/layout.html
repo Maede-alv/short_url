@@ -17,8 +17,11 @@
 <body>
     {{ header() }}
     <main class="main">
-        <section class="urlbox">
+        <section class="formbox">
             {% block main_content %} {% endblock %}
+        </section>
+        <section class="urlbox">
+            {% block url_content %} {% endblock %}
         </section>
     </main>
     {{ footer() }}
